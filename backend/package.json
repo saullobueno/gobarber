@@ -40,7 +40,7 @@
     "pg": "^7.11.0",
     "pg-hstore": "^2.3.3",
     // Lib para trabalhar com SQLs
-    "sequelize": "^5.8.7",
+    "sequelize": "^5.15.1",
     // trata melhor as informações de erro
     "youch": "^2.0.10",
     // validação de dados pela Schema
