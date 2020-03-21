@@ -1,0 +1,7 @@
+// Configurações do Prettier
+{
+  // Aspas simples
+  "singleQuote": true,
+  // Padrão de virgula no final de objetos e Arrays
+  "trailingComma": "es5"
+}

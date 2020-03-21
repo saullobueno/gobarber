@@ -1,0 +1,6 @@
+{
+  // Configurações do Nodemon para rodar o sucrase junto
+  "execMap": {
+    "js": "sucrase-node"
+  }
+}
