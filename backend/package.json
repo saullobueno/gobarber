@@ -30,7 +30,7 @@
     // Lib para autenticação de usuarios
     "jsonwebtoken": "^8.5.1",
     // Framework para MongoDB
-    "mongoose": "^5.6.0",
+    "mongoose": "^5.7.5",
     // upload de arquivos
     "multer": "^1.4.1",
     // Envio de emails
