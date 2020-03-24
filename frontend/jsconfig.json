@@ -1,0 +1,8 @@
+{// configurando para importamos sem precisar ficar colocando ../../ e agora usamos o til (~)
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "~/*": ["*"]
+    }
+  }
+}

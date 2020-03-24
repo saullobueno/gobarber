@@ -35,7 +35,8 @@ class App {
   middlewares() {
     // Vigiando erros e bugs
     this.server.use(Sentry.Handlers.requestHandler());
-    // Restringindo acesso a API
+    // Restringindo acesso a API. Do jeito abaixo ele deixa o acesso livre.
+    // Se quisessemos restrigir, colocariamos entre os parenteses do cors: { origin: 'https://www.nomedosite.com.br'}
     this.server.use(cors());
     // Fazer nossas requisições receberem os dados no formato de JSON
 		this.server.use(express.json());
