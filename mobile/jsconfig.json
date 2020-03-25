@@ -1,0 +1,9 @@
+// Config para usar o til nos imports
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "~/*": ["*"]
+    }
+  }
+}

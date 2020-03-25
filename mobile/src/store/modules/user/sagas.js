@@ -1,0 +1,36 @@
+// o alert aqui substitui o toostfy
+// o history tbm nao é usado. Fazemos o direcionamento no Routes
+import { Alert } from 'react-native';
+import { takeLatest, call, put, all } from 'redux-saga/effects';
+
+import api from '~/services/api';
+
+import { updateProfileSuccess, updateProfileFailure } from './actions';
+
+export function* updateProfile({ payload }) {
+  try {
+    // Aqui retiramos o avatar_id, pois o cliente nao tem essa opção
+    const { name, email, ...rest } = payload.data;
+
+    const profile = Object.assign(
+      { name, email },
+      rest.oldPassword ? rest : {}
+    );
+
+    const response = yield call(api.put, 'users', profile);
+
+    // Alert substituindo o toastfy
+    Alert.alert('Sucesso!', 'Perfil atualizado com sucesso');
+
+    yield put(updateProfileSuccess(response.data));
+  } catch (err) {
+    // Alert substituindo o toastfy
+    Alert.alert(
+      'Falha na atualização',
+      'Houve um erro na atualização do perfil, verifique seus dados'
+    );
+    yield put(updateProfileFailure());
+  }
+}
+
+export default all([takeLatest('@user/UPDATE_PROFILE_REQUEST', updateProfile)]);
