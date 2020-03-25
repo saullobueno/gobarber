@@ -2,7 +2,7 @@
   GoBarber mobile
 </h1>
 
-<p align="center">Aplicativo para barbeiros receberem agendamentos através do aplicativo do projeto. Projeto full stack desenvolvido em Node.js, ReactJS e React Native. 🎓</p>
+<p align="center">Projeto full stack para barbeiros receberem agendamentos na web de clientes cadastrados pelo aplicativo. Desenvolvido em Node.js, ReactJS e React Native. 🎓</p>
 
 <p align="center">
   <a href="#-instalacao-e-execução">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
