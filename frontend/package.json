@@ -5,7 +5,7 @@
   "dependencies": {
     // Trabalha com formularios
     "@rocketseat/unform": "^1.5.1",
-		"axios": "^0.19.0",
+		"axios": "^0.21.1",
 		// para formatar datas. @next no yarn add instala a ultima versao
     "date-fns": "^2.0.0-beta.2",
     // trabalhar com timezone da data
