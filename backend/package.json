@@ -28,7 +28,7 @@
     // template para envio de emails
     "express-handlebars": "^3.1.0",
     // Lib para autenticação de usuarios
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     // Framework para MongoDB
     "mongoose": "^5.7.5",
     // upload de arquivos
